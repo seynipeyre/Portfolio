@@ -1,0 +1,37 @@
+.scrol{
+    // background: url("../../public/images/img_ordi.png") repeat no-repeat;
+    // background-size: cover;
+    // width: 400px;
+    // height: 300px;
+    background-color: aqua;
+}
+.image-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    width: 438px; /* ajuste la largeur selon tes besoins */
+    height: 343px; /* ajuste la hauteur selon tes besoins */
+    border-radius: 1rem;
+
+    &__img {
+    transition: transform 10s ease-in-out;
+    transform: translateY(0%);
+    // filter: blur(0);
+
+        &:hover {
+            transform: translateY(calc(-100% + 350px)); /* ajuste la valeur pour le défilement vertical */
+            // filter: blur(8px);
+    }
+    }
+}
+
+.wrap{
+    padding: 3rem;
+}   
+

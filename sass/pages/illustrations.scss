@@ -1,0 +1,145 @@
+.container{
+  background-image: url(../../public/images/mes.dessins/foret_background_1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &__box{
+    position: relative;
+    width: 290px;
+    height: 429px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 1s;
+
+    &:hover{
+      transform: translateY(-20px);
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ff9a2f, #0cffff);
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ff9a2f, #0cffff);
+      filter: blur(15px);
+    }
+    
+    &:nth-child(2)::before{
+      background: linear-gradient(345deg, #c80f0f, #0cffff);
+    }
+    &:nth-child(2)::after{
+      background: linear-gradient(45deg, #ff2f2f, #0cffff);
+    }
+    &:nth-child(3)::before{
+      background: linear-gradient(100deg, #c85c0f, #ef0cff);
+    }
+    &:nth-child(3)::after{
+      background: linear-gradient(100deg, #ff932f, #ff0cbe);
+
+    }
+    &:nth-child(4)::before{
+      background: linear-gradient(100deg, #0fc821, #ef0cff);
+    }
+    &:nth-child(4)::after{
+      background: linear-gradient(100deg, #82ff2f, #ff0cbe);
+
+    }
+    &:nth-child(5)::before{
+      background: linear-gradient(100deg, #c85c0f, #200cff);
+    }
+    &:nth-child(5)::after{
+      background: linear-gradient(100deg, #ff932f, #200cff);
+
+    }
+    &:nth-child(6)::before{
+      background: linear-gradient(100deg, #fcff2f, #0cffd2);
+    }
+    &:nth-child(6)::after{
+      background: linear-gradient(100deg, #fcff2f, #0cffd2);
+
+    }
+    &:nth-child(7)::before{
+      background: linear-gradient(100deg, #c80f40, #0cff2c);
+    }
+    &:nth-child(7)::after{
+      background: linear-gradient(100deg, #c80f40, #0cff2c);
+
+    }
+    &:nth-child(8)::before{
+      background: linear-gradient(100deg, #c85c0f, #ef0cff);
+    }
+    &:nth-child(8)::after{
+      background: linear-gradient(100deg, #ff932f, #ff0cbe);
+
+    }
+    &:nth-child(9)::before{
+      background: linear-gradient(100deg, #2fc8ff, #4d3d80);
+    }
+    &:nth-child(9)::after{
+      background: linear-gradient(100deg, #2fc8ff, #4d3d80);
+
+    }
+    &:nth-child(10)::before{
+      background: linear-gradient(100deg, #c85c0f, #ef0cff);
+    }
+    &:nth-child(10)::after{
+      background: linear-gradient(100deg, #ff932f, #ff0cbe);
+
+    }
+    &__span{
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      right: 6px;
+      bottom: 6px;
+      background: #111;
+      z-index: 2;
+    }
+
+    &__content{
+      position: relative;
+      z-index: 10;
+      padding: 5px  10px;
+
+      img{
+        width: 19rem;
+        height: 24rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      a{
+        padding: 2rem;
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+
+  }
+}

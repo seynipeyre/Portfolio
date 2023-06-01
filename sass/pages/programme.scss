@@ -1,0 +1,128 @@
+.hero {
+    background: $hero-bg;
+    height: $hero-height;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1, p {
+      color: $hero-text-color;
+    }
+}
+
+.cta {
+    display: inline-block;
+    background-color: $hero-button-bg;
+    color: $hero-button-color;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    transition: background-color .2s;
+
+    &:hover {
+        background-color: $hero-button-hover;
+    }
+  }
+
+
+#about {
+    margin-top: 4rem;
+}
+
+.illustration-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+
+    figure {
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1);
+      
+
+      figcaption {
+        font-size: 1.2rem;
+        margin-top: 0.5rem;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.maquette-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+
+    figure {
+      margin: 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,.1)
+        
+       
+        }
+    }
+}
+
+    
+
+    
+    // Media queries
+    @media only screen and (max-width: 768px) {
+      main {
+        padding: 1rem;
+    
+        h1 {
+          font-size: 2.5rem;
+        
+    
+        h2 {
+          font-size: 1.5rem;
+        
+    
+        p {
+          font-size: 1rem;
+        }
+        }
+    }
+  }
+}
+@media screen and (max-width: 768px){
+     // &.desktop {
+        //     img {
+        //       width: 100%;
+        //       height: auto;
+        
+    
+          // Tablet view
+          
+        img {
+            width: 50%;
+            height: auto;
+    
+          // Mobile view
+       
+            // img {
+            //   width: 30%;
+            //   height: auto;
+    
+        figcaption {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+    }
+}
+
