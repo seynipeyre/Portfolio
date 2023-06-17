@@ -2,9 +2,14 @@
 @import "base/variables";
 @import "layout/global";
 
-
-@import "pages/programme.scss";
-@import "pages/maquettes.scss";
-@import "pages/illustrations.scss";
+// ========================pages============================
 @import "pages/nav.scss";
-@import "pages/moi.scss";
+@import "pages/accueil.scss";
+@import "pages/footer.scss";
+@import "pages/cv.scss";
+
+// ========================sous pages============================
+@import "sous-pages/illustrator.scss";
+@import "sous-pages/photoshop.scss";
+@import "sous-pages/dessins.scss";
+@import "sous-pages/html-css.scss";

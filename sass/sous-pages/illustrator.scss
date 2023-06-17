@@ -1,0 +1,166 @@
+// ========================Presentation de la page illustrator======================
+// ========================Fin presentation de la page illustrator======================
+.illustrator{
+    background-color: white;
+    background-attachment: fixed;
+    // border: 10px solid #3fe4ff;
+  h1{
+    // Styles pour la section
+    background-color: #f0f0f0;
+    padding: 20px;
+    &::after,
+    &::before {
+    // Styles pour les pseudo-éléments ::after et ::before du titre
+    content: "";
+    display: block;
+    width: 435px;
+    height: 4px;
+    background-color: #f04177;
+    margin-top: 10px;
+    }
+
+    &::after {
+        // Positionnement de ::after à gauche
+        float: left;
+    }
+
+    &::before {
+        // Positionnement de ::before à droite
+        float: right;
+
+    }
+    }
+}
+.illustrators{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 40px 0;
+flex-wrap: wrap;
+margin: 0 auto;
+overflow: hidden;
+
+&__box{
+    position: relative;
+    width: 276px;
+    height: 341px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 30px;
+    transition: 1s;
+
+    &:hover{
+    transform: translateY(-20px);
+    }
+
+    &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9a2f, #0cffff);
+    }
+
+    &::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #ff9a2f, #0cffff);
+    filter: blur(15px);
+    }
+    
+    &:nth-child(2)::before{
+    background: linear-gradient(345deg, #c80f0f, #0cffff);
+    }
+    &:nth-child(2)::after{
+    background: linear-gradient(45deg, #2fff66, #0cffff);
+    }
+    &:nth-child(3)::before{
+    background: linear-gradient(100deg, #c85c0f, #ef0cff);
+    }
+    &:nth-child(3)::after{
+    background: linear-gradient(100deg, #ff932f, #ff0cbe);
+
+    }
+    &:nth-child(4)::before{
+    background: linear-gradient(100deg, #0fc821, #ef0cff);
+    }
+    &:nth-child(4)::after{
+    background: linear-gradient(100deg, #82ff2f, #ff0cbe);
+
+    }
+    &:nth-child(5)::before{
+    background: linear-gradient(100deg, #c85c0f, #200cff);
+    }
+    &:nth-child(5)::after{
+    background: linear-gradient(100deg, #ff932f, #200cff);
+    }
+    
+    &__span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: #111;
+    z-index: 2;
+    }
+
+    &__content{
+    position: relative;
+    z-index: 10;
+    padding: 5px  10px;
+
+    img{
+        width: 17rem;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 18rem;
+        height: 20rem;
+        opacity: 0;
+        // transition: opacity 0.5s, transform 0.5s;
+        transform: translateX(-25%);
+        transition: opacity 0.5s, transform 0.5s;
+        &:hover{
+        // display: flex;
+        opacity: 1;
+        transform: translateX(0);
+        }
+    }
+    li{
+        margin-right: 10px;
+    }
+
+    a{
+        padding: 7.5rem;
+        text-decoration: none;
+        color: #fff;
+        background: rgba(255, 129, 19, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    }
+
+}
+}
+

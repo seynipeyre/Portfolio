@@ -13,17 +13,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-  </head>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!--====== logo_seyni ======-->
+  <link rel="shortcut icon" href="images/mes.dessins/seyni_logo.png" type="image/png">
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="css1/bootstrap.min.css">
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="css1/LineIcons.css">
+
+  <!--====== Magnific Popup css ======-->
+  <link rel="stylesheet" href="css1/magnific-popup.css">
+
+  <!--====== Default css ======-->
+  <link rel="stylesheet" href="css1/default.css">
+
+  <!--====== Style css ======-->
+  <link rel="stylesheet" href="css1/style.css">
+
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />   
+</head>
+
 <body>
   <header>
     <nav>
       <ul>
+        <li class="link"><a class="cta1" href="accueil.html"><img src="images/mes.dessins/logo_2.png"
+              alt="logo portfolio"></a></li>
         <li class="link"><a href="accueil.html">Accueil</a></li>
-        <li class="link"><a href="illustrations.html">Illustrations</a></li>
-        <li class="link"><a href="maquettes.html">Maquettes</a></li>
+        <!-- ================fin sous menu=============== -->
+        <div class="menu">
+          <ul class="menus">
+            <li class="menus__links">
+              <div class="menus__links__link-wrapper">
+                <a href="projets.html" class="menus__links__link-wrapper__cta1 menus__links__hidden-link" onclick="toggleSubMenu(event)">Projet</a>
+                <ul class="submenu">
+                  <li class="submenu__item"><a href="illustrator.html" class="submenu__link">Illustrator</a></li>
+                  <li class="submenu__item"><a href="photoshop.html" class="submenu__link">Photoshop</a></li>
+                  <li class="submenu__item"><a href="html-css.html" class="submenu__link">HTML CSS</a></li>
+                  <li class="submenu__item"><a href="dessins.html" class="submenu__link">Dessins</a></li>
+                </ul>
+              </div>
+            </li>
+            <!-- Autres liens du menu -->
+          </ul>
+        </div>
+        <!-- ================fin sous menu=============== -->      
         <li class="link"><a href="cv.html">CV</a></li>
-        <li class="link"><a href="apropos.html">À propos</a></li>
+        <li class="link"><a href="mes-passion.html">Mes passions</a></li>
       </ul>
     </nav>
   </header>
@@ -31,13 +69,13 @@
 
   <main>
 
-    <!-- ===================Début du footer=================== -->
-    <section id="accueil">
+    <!-- ===================Présentation=================== -->
+    <section class="moi">
       <div class="container">
         <div class="container__presentation">
-          <h2 class="container__presentation-title">Présentation</h2>
-          <p class="container__presentation-content">Formation: <span>Technicienne Intégatrice Web.</span></p>
-          <p class="container__presentation-content">Recherche: <span>Formation Designer Web.</span>
+          <h2 class="container__presentation__title">PEYRE Seyni</h2>
+          <p class="container__presentation__content">Formation: <span>Technicienne Intégatrice Web.</span></p>
+          <p class="container__presentation__content">Recherche: <span>Formation Designer Web.</span>
           <span>Alternance Designer Web</span></p>
         </div>
     
@@ -46,15 +84,253 @@
         </div>
       </div>
     </section>
-    <!-- ===================Début du footer=================== -->
+    <!-- ===================Fin présentation=================== -->
 
+    <section>
+      <div class="espace"></div>
+    </section>
+
+    <!-- ===================Fin présentation=================== -->
+    <section class="bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-13">
+                <div class="section-title text-center">
+                    <h2 class="title">A PROPOS DE MOI</h2>
+
+                </div> <!-- section title -->
+            </div>
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="about-content mt-50">
+                    <!-- <h5 class="about-title"></h5>-->
+                    <p>J'ai reçu une formation pour utiliser divers 
+                      outils tels que Illustrator, Photoshop, Adobe XD, 
+                      HTML, CSS, WordPress et PHP. Pendant ma formation, 
+                      j'ai eu l'occasion de travailler sur des projets 
+                      personnels ainsi que des projets en groupe. Actuellement, 
+                      je suis en stage chez COOPCYCLE, où j'effectue un stage de deux mois.
+                    </p>
+                    <ul class="clearfix">
+                        <li>
+                            <div class="single-info d-flex align-items-center">
+                                <div class="info-icon">
+                                  <i class="fa-solid fa-calendar-days"></i>                                
+                                </div>
+                                <div class="info-text">
+                                    <p> 18 Février 1999</p>
+                                </div>
+                            </div> <!-- single info -->
+                        </li>
+                        <li>
+                            <div class="single-info d-flex align-items-center">
+                                <div class="info-icon">
+                                  <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p><a class="mail" href="mailto:fatoupeyre5@gmail.com" target="_blank">seynipeyre@gmail.com</a></p>
+                                    <!--<p> fatoupeyre@gmail.com</p> -->
+                                </div>
+                            </div> <!-- single info -->
+                        </li>
+
+                        <li>
+                            <div class="single-info d-flex align-items-center">
+                                <div class="info-icon">
+                                  <i class="fa-solid fa-house"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p>PARIS</p>
+                                </div>
+                            </div> <!-- single info -->
+                        </li>
+                        <li>
+                            <div class="single-info d-flex align-items-center">
+                                <div class="info-icon">
+                                  <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="info-text">
+                                    <p> +337 51 86 86 70</p>
+                                </div>
+                            </div> <!-- single info -->
+                        </li>
+                    </ul>
+                </div> <!-- about content -->
+            </div>
+            <div class="col-xl-5 offset-xl-1 col-lg-6">
+                <div class="about-skills pt-25">
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">HTML</h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">90</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="90" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">CSS</h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">80</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="80" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">ILLUSTRATOR</h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">90</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="90" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">ADOBE XD </h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">80</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="80" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">PHOTOSHOP </h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">90</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="90" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                    <div class="skill-item mt-25">
+                        <div class="skill-header">
+                            <h6 class="skill-title">WORDPRESS </h6>
+                            <div class="skill-percentage">
+                                <div class="count-box counted">
+                                    <span class="counter">70</span>
+                                </div>
+                                %
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="bar-inner">
+                                <div class="bar progress-line" data-width="70" style="width: 70%;"></div>
+                            </div>
+                        </div>
+                    </div> <!-- skill item -->
+                </div> <!-- about skills -->
+            </div>
+        </div> <!-- row -->
+      </div>
+    </section>
+    <!-- ===================Fin présentation=================== -->
+
+   
+    <section>
+      <div class="espace"></div>
+    </section>
 
   </main>
-  <footer>
-    <p>&copy; 2023 Mon Portfolio</p>
-  </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="js/nav.js"></script>
+  <!-- ===================Début du footer=================== -->
+  <footer>
+    <div class="footer-content"> 
+      <div class="footer-content__left-section">
+        <img src="images/mes.dessins/logo_2.png" alt="Logo" class="footer-content__left-section__logo">
+        <!-- <p class="footer-content__left-section__name">Votre nom</p> -->
+      </div>
+      <div class="footer-content__right-section">
+        <p class="footer-content__right-section__contact"><a class="footer-content__right-section__contact__cta" href="seynipeyre@gmail.com">seynipeyre@gmail.com</a></p>
+        <p class="footer-content__right-section__copyright">&copy; 2023 Mon Portfolio</p>
+      </div> 
+        <ul>
+          <li><a href="https://github.com/seynipeyre" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/seyni-peyre/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ===================Fin du footer=================== -->
+
+<!-- ===================Fin du footer=================== -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/nav.js"></script>
+
+
+  <!--====== BACK TOP TOP PART ENDS ======-->
+  <!--====== jquery js ======-->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+  <!--====== Bootstrap js ======-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <!--====== Magnific Popup js ======-->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <!--====== Parallax js ======-->
+  <script src="js/parallax.min.js"></script>
+
+  <!--====== Counter Up js ======-->
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+
+  <!--====== Ajax Contact js ======-->
+  <script src="js/ajax-contact.js"></script>
+
+  <!--====== Appear js ======-->
+  <script src="js/jquery.appear.min.js"></script>
+
+  <!--====== Scrolling js ======-->
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!--====== Validator js ======-->
+  <script src="js/validator.min.js"></script>
+
+  <!--====== Main js ======-->
+  <script src="js/main.js"></script>
 </body>
+
 </html>

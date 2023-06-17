@@ -1,5 +1,5 @@
 nav{
-  background: url(../../public/images/background_nav.png);
+  background: url(../../public/images/project-5.png);
   background-position-x: 0%;
   background-position-y: 0%;
   background-size: auto;
@@ -24,7 +24,7 @@ nav{
         a {
           padding: 1.5rem;
           text-decoration: none;
-          color: #000;
+          color: #ffffff;
           background-color: #ffb0b0;
           height: 1rem;
           width: 10rem;
@@ -36,7 +36,7 @@ nav{
           
           &:hover {
             background-color: #ec6b6b;
-            color: #ffffff;
+            color: #000000;
           }
         }
       }  
@@ -46,3 +46,101 @@ nav{
     margin: 7px auto;
     padding: 11px;
 }
+.logo{
+  z-index: 5;
+}
+.cta1{
+  padding: 1.5rem;
+  background-color: #fff;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 6rem;
+  
+  &:hover {
+    background-color: #ec6b6b;
+  }
+}
+
+// ==================sous menu=======================
+.menu {
+  // background-color: #000;
+
+  .menus {
+    // background-color: #fff;
+
+    &__links {
+      text-decoration: none;
+
+      &__link-wrapper {
+        position: relative;
+      }
+
+        &__cta1 {
+          text-decoration: none;
+          &:focus + .submenu {
+            display: block;
+          }
+          &__hidden-link {
+            display: none;
+          }
+    }
+  }
+}    
+
+  .submenu {
+    display: none;
+    // position: absolute;
+    top: 100%;
+    left: 0;
+    // background-color: #070202;
+    // background-color: #070202;
+    // opacity: 0.2; // Opacité du sous-menu
+    padding: 0;
+    width: 100%;
+  
+
+    &.active {
+      display: block;
+      padding: 1rem;
+    }
+    
+    &:hover {
+      display: block;
+      
+    }
+
+    &__item {
+      width: 100%;
+      padding-block: 1rem;
+
+      &__link {
+        padding: 1.5rem;
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        text-align: center;
+
+        &:hover {
+          background-color: #ffb0b0;
+        }
+      }
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(7, 2, 2, 0.8); // Couleur d'arrière-plan avec opacité
+      z-index: -1;
+      border-radius: 24px;
+      opacity: 0.6;
+    }
+  }
+}
+// ==================sous menu=======================
+
+
+
