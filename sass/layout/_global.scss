@@ -15,11 +15,21 @@ header {
 }
 
 main {
-  max-width: 1139px;
+  max-width: 1430px;
   margin: 0 auto;
-  // padding: 2rem;
-  // flex: 1;
-  margin-left: 260px;
+  margin-left: 254px;
+  margin-right: 38px;
+  @media screen and (max-width: 991px) {
+    margin: 0 auto;
+    margin-right: auto;
+    margin-left: 37px;
+    margin-right: 42px;
+  }
+  //   @media screen and (max-width: 480px) {
+  //     margin-left: -4px;
+  //     margin-right: 0rem;
+  //     padding: 2rem;
+  //   }
 
   h1 {
     font-size: 3rem;
@@ -40,6 +50,12 @@ main {
 
 .espace{
   padding: 3.5rem;
+  @media screen and (max-width: 991px) {
+    padding: 1.5rem;
+  }
+  @media screen and (max-width: 490px) {
+    padding: 38px;
+  }
 }
 
 .flex{
@@ -56,6 +72,13 @@ main {
   border-radius: 2rem;
   margin-top: 2rem;
   transition: background-color .2s;
+  @media screen and (max-width: 600px) {
+    color: rgb(0, 0, 0);
+    padding: 0.5rem 0.5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
 
   &:hover {
       background-color: #ec6b6b;

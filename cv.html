@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio/accueil</title>
+    <link rel="stylesheet" href="public/css/reset.css" />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <!--====== logo_seyni ======-->
+  <link rel="shortcut icon" href="public/images/mes.dessins/seyni_logo.png" type="image/png">
+
+  <!--====== Bootstrap css ======-->
+  <link rel="stylesheet" href="public/css1/bootstrap.min.css">
+
+  <!--====== Line Icons css ======-->
+  <link rel="stylesheet" href="public/css1/LineIcons.css">
+
+  <!--====== Magnific Popup css ======-->
+  <link rel="stylesheet" href="public/css1/magnific-popup.css">
+
+  <!--====== Default css ======-->
+  <link rel="stylesheet" href="public/css1/default.css">
+
+  <!--====== Style css ======-->
+  <link rel="stylesheet" href="public/css1/style.css">
+
+  <link rel="stylesheet" href="public/css/swiper-bundle.min.css" />   
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <li class="link"><a class="cta1" href="index.html"><img src="public/images/mes.dessins/logo_2.png" alt="logo portfolio"></a></li>
+      <!-- <a class="navbar-brand" href="#">Mon Site</a> -->
+      <div class="burger">
+        <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      </div>
+    
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="link nav-item active"><a class="" href="index.html">Accueil</a></li> 
+          <!-- ===========================Début sous-menu================================= -->
+          <div class="menu">
+            <ul class="menus">
+              <li class="menus__links">
+                <div class="menus__links__link-wrapper">
+                  <!-- <a href="#" id="projet-link" class="menus__links__link-wrapper__cta1">Projet</a> -->
+
+                  <a href="#" class="menus__links__link-wrapper__cta1 menus__links__hidden-link" onclick="toggleSubMenu(event)">Projet</a>
+                  <ul class="submenu">
+                    <li class="submenu__item"><a href="illustrator.html" class="submenu__link">Illustrator</a></li>
+                    <li class="submenu__item"><a href="photoshop.html" class="submenu__link">Photoshop</a></li>
+                    <li class="submenu__item"><a href="logo.html" class="submenu__link">Logo</a></li>
+                    <li class="submenu__item"><a href="html-css.html" class="submenu__link">HTML CSS</a></li>
+                    <li class="submenu__item"><a href="dessins.html" class="submenu__link">Dessins</a></li>
+                  </ul>
+                </div>
+              </li> 
+              <!-- Autres liens du menu -->
+            </ul>
+          </div> 
+          <!-- =================================fin sous-menu=========================== -->
+          <li class="link"><a href="cv.html">CV</a></li>
+          <li class="link"><a href="mes-passion.html">Mes passions</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+
+<main>
+        
+    <!-- ===================Début CV=================== -->
+    <section class="cv">
+        <div>
+            <img class="cv-img" src="public/images/cv/header.webp" alt="header cv"> 
+        </div>
+        <div>
+            <img class="cv-img" src="public/images/cv/information.webp" alt="mes coordonées me concernant">
+        </div>
+        <!-- <div class="espace"></div> -->
+        <div>
+            <img src="public/images/cv/body.webp" alt="image body de mon CV">
+        </div>
+    
+      
+      <ul class="flex gap">
+        <li>
+          <a class="cta" href="public/images/cv/cv.pdf">Télécharger le pdf</a></li>
+        <li>
+          <a class="cta" href="https://www.linkedin.com/in/seyni-peyre/">LinkedIn</a>
+        </li>
+    </ul>
+    </section>
+
+    <section>
+      <div class="espace"></div>
+    </section>
+    <!-- ===================Fin CV=================== -->
+  
+
+  </main>
+
+
+
+  <!-- ===================Début du footer=================== -->
+  <footer>
+    <div class="footer-content"> 
+      <div class="footer-content__left-section">
+        <img src="public/images/mes.dessins/logo_2.png" alt="Logo" class="footer-content__left-section__logo">
+        <!-- <p class="footer-content__left-section__name">Votre nom</p> -->
+      </div>
+      <div class="footer-content__right-section">
+        <p class="footer-content__right-section__contact"><a class="footer-content__right-section__contact__cta" href="seynipeyre@gmail.com">seynipeyre@gmail.com</a></p>
+        <p class="footer-content__right-section__copyright">&copy; 2023 Mon Portfolio</p>
+      </div> 
+        <ul>
+          <li><a href="https://github.com/seynipeyre" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/seyni-peyre/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <!-- ===================Fin du footer=================== -->
+
+<!-- ===================Fin du footer=================== -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/nav.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+  <!--====== BACK TOP TOP PART ENDS ======-->
+  <!--====== jquery js ======-->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+  <!--====== Bootstrap js ======-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.min.js"></script>
+
+  <!--====== Magnific Popup js ======-->
+  <script src="js/jquery.magnific-popup.min.js"></script>
+
+  <!--====== Parallax js ======-->
+  <script src="js/parallax.min.js"></script>
+
+  <!--====== Counter Up js ======-->
+  <script src="js/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+
+  <!--====== Ajax Contact js ======-->
+  <script src="js/ajax-contact.js"></script>
+
+  <!--====== Appear js ======-->
+  <script src="js/jquery.appear.min.js"></script>
+
+  <!--====== Scrolling js ======-->
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!--====== Validator js ======-->
+  <script src="js/validator.min.js"></script>
+
+  <!--====== Main js ======-->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

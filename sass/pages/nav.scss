@@ -2,22 +2,20 @@ nav{
   background: url(../../public/images/project-5.png);
   background-position-x: 0%;
   background-position-y: 0%;
-  background-size: auto;
   background-size: cover;
-  height: 73rem;
-  position: fixed;
+  height: 100%;
+  position: fixed !important;
+  // position: absolute !important;
+  display: flow-root !important;
   left: 0;
-  top: 36rem;
-  transform: translateY(-50%);
-  background-position-y: 52rem;
   width: 14rem;
     ul {
       list-style-type: none;
-      padding: 27px;
+      padding: 9px;
       margin: 0px auto;
       display: flex;
       align-items: center;
-      flex-direction: column;
+      flex-direction: column !important;
       text-align: center;
      
       li {
@@ -33,6 +31,19 @@ nav{
           align-items: center;
           display: flex;
           justify-content: center;
+          @media screen and (max-width: 991) {
+            // padding: 1.5rem;
+            // text-decoration: none;
+            // color: #ffffff;
+            // background-color: #ffb0b0;
+            height: 1rem;
+            width: 10rem;
+            text-align: center;
+            border-radius: 2rem;
+            align-items: center;
+            display: flex;
+            justify-content: center; 
+          }
           
           &:hover {
             background-color: #ec6b6b;
@@ -46,15 +57,21 @@ nav{
     margin: 7px auto;
     padding: 11px;
 }
-.logo{
-  z-index: 5;
-}
+
 .cta1{
   padding: 1.5rem;
   background-color: #fff;
   height: 10rem;
   width: 10rem;
   border-radius: 6rem;
+  @media screen and (max-width: 991px) {
+    height: 6rem;
+    width: 6rem;
+  }
+  @media screen and (max-width: 500px) {
+    height: 4rem;
+    width: 4rem;
+  }
   
   &:hover {
     background-color: #ec6b6b;
@@ -62,51 +79,118 @@ nav{
 }
 
 // ==================sous menu=======================
+// .menu {
+//   // background-color: #000;
+
+//   .menus {
+//     // background-color: #fff;
+
+//     &__links {
+//       text-decoration: none;
+
+//       &__link-wrapper {
+//         position: relative;
+//       }
+
+//         &__cta1 {
+//           text-decoration: none;
+//           &:focus + .submenu {
+//             display: block;
+//           }
+//           &__hidden-link {
+//             display: none;
+//           }
+//     }
+//   }
+// }    
+
+//   .submenu {
+//     display: none;
+//     top: 100%;
+//     left: 0;
+//     padding: 0;
+//     width: 100%;
+  
+
+//     &.active {
+//       display: block;
+//       padding: 1rem;
+//     }
+    
+//     &:hover {
+//       display: block;
+      
+//     }
+
+//     &__item {
+//       width: 100%;
+//       padding-block: 1rem;
+
+//       &__link {
+//         padding: 1.5rem;
+//         text-decoration: none;
+//         color: #ffffff;
+//         display: block;
+//         text-align: center;
+
+//         &:hover {
+//           background-color: #ffb0b0;
+//         }
+//       }
+//     }
+
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       top: 0;
+//       left: 0;
+//       width: 100%;
+//       height: 100%;
+//       background-color: rgba(7, 2, 2, 0.8); // Couleur d'arrière-plan avec opacité
+//       z-index: -1;
+//       border-radius: 24px;
+//       opacity: 0.6;
+//     }
+//   }
+// }
+
+
+
 .menu {
-  // background-color: #000;
-
   .menus {
-    // background-color: #fff;
-
     &__links {
       text-decoration: none;
 
       &__link-wrapper {
         position: relative;
-      }
 
         &__cta1 {
           text-decoration: none;
           &:focus + .submenu {
             display: block;
           }
-          &__hidden-link {
-            display: none;
-          }
+        }
+      }
     }
   }
-}    
 
   .submenu {
     display: none;
-    // position: absolute;
     top: 100%;
     left: 0;
-    // background-color: #070202;
-    // background-color: #070202;
-    // opacity: 0.2; // Opacité du sous-menu
     padding: 0;
     width: 100%;
-  
 
-    &.active {
-      display: block;
-      padding: 1rem;
+    // &.active {
+    //   display: block;
+    //   padding: 1rem;
+    // }
+    &.hidden-link {
+      display: none;
     }
-    
+
     &:hover {
       display: block;
-      
     }
 
     &__item {
@@ -120,9 +204,9 @@ nav{
         display: block;
         text-align: center;
 
-        &:hover {
-          background-color: #ffb0b0;
-        }
+        // &:hover {
+          // background-color: #ffb0b0;
+        // }
       }
     }
 
@@ -140,7 +224,94 @@ nav{
     }
   }
 }
-// ==================sous menu=======================
+
+// ================== Fin su sous menu=======================
 
 
+// Responsive styles
+@media screen and (max-width: 991px) {
+  nav {
+    width: 100%;
+    top: 0;
+    bottom: auto;
+    height: auto;
+    transform: none;
+    // padding: 1rem;
+    position: fixed !important;
+    z-index: 12;
+    // background-position-x: 365.4rem;
+    // background-position-y: 182%;
+    // background-size: auto;
+    background-size: cover;
+  
+
+    ul {
+      padding: 0;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+
+      li {
+        margin: 0;
+        padding: 0;
+
+          &:hover {
+            background-color: #ffb0b0;
+            color: #ffffff;
+          
+        }
+      }
+    }
+}
+
+  .menu {
+    .menus {
+      &__links {
+        &__cta1 {
+          &:focus + .submenu {
+            display: none;
+          }
+        }
+      }
+    }
+
+    // .submenu {
+      
+
+      &__item {
+        padding: 0;
+
+        &__link {
+          padding: 1rem;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+      
+    }
+  }
+// =====================================menu burger=========================================
+
+
+.burger{
+  @media screen and (max-width: 1000px) {
+    top: 56px;
+    position: absolute;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0, 0.52);
+  }
+  @media screen and (max-width: 500px) {
+    top: 37px;
+    background-color: rgb(0, 0, 0, 0.52);
+  }
+}
 

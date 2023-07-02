@@ -1,10 +1,16 @@
 .moi{
   // background-color: #ff00bb;
-  background-image: url(../../public/images/gallery/me_1.png); 
+  background-image: url(../../public/images/gallery/me_1.webp); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: 10px solid #e2235e;
+  padding: 28px;
+  @media screen and (max-width: 991px) {
+  margin-bottom: -1rem;
+  margin-top: 11rem;
+  overflow: hidden;
+  }
 }
 .maquette{
   position: relative;
@@ -16,24 +22,133 @@
   margin: 0 auto;
   overflow: hidden;
 }
-.container {
+.container1 {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  padding: 40px 0;
+  // flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 4%;
+  overflow: hidden;
+  @media screen and (max-width: 1437px) {
+    flex-wrap: wrap;
+    gap: 4%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: contents;
+  }
+  @media screen and (max-width: 1024px) {
+    flex-wrap: nowrap;
+    gap: 30px;
+    gap: 4%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  @media screen and (max-width: 991px) {
+    flex-wrap: wrap;
+    gap: 4%;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  .myma{
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 26px;
+    // padding: 11px 0px;
+    margin: 0px auto;
+    gap: 6%;
+    @media screen and (max-width: 1437px) {
+      // padding: 37px 0px;
+      margin: 0px auto;
+      // display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media screen and (max-width: 400px) {
+      padding: 0px 26px;
+    }
+  }
+ 
   
   &__presentation {
-    background-color: #f1f1f1;
+    background-color: #ffffffed;
+    box-shadow: 12px 11px 15px #0009;    
     padding: 20px;
-
+    @media screen and (max-width: 1437px) {
+      padding: 25px;
+    }
+    // @media screen and (max-width: 767px) {
+    //   padding: 5px;
+    // }
+    @media screen and (max-width: 768px) {
+      padding: 45px;
+      display: inline flow-root list-item;
+    }
+    @media screen and (max-width: 420px) {
+      padding: 5px;
+      display: inline flow-root list-item;
+    }
     &__title {
       font-size: 51px;
       color: #333;
+      display: flex;
+      justify-content: center;
+      
+      @media screen and (max-width: 1437px) {
+        font-size: 40px;
+        color: #333;
+        display: flex;
+        justify-content: center;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 27px;
+        top: 16px;
+        position: relative;
+      }
+      // @media screen and (max-width: 768px) {
+      //   font-size: 25px;
+      //   top: 29px;
+      //   position: relative;
+      // }
+      @media screen and (max-width: 768px) {
+        font-size: 14px;
+        top: 8px;
+        position: relative;
+      }
    }
     &__content {
       font-size: 17px;
       color: #000000;
       margin-top: 0.5rem;
+      @media screen and (max-width: 1437px) {
+        font-size: 20px;
+        margin: 18px;
+        line-height: 1.4;
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 15px;
+        margin: 44px;
+        line-height: 1.4;
+      }
+      // @media screen and (max-width: 768px) {
+      //   font-size: 15px;
+      //   margin: 44px;
+      //   line-height: 1.4;
+      //   // left: 29px;
+      //   position: relative;
+      // }
+      @media screen and (max-width: 768px) {
+        font-size: 13px;
+        margin: 19px;
+        // line-height: 1.4;
+        left: -8px;
+        position: relative;
+      }
+     
     }
  
   }
@@ -47,7 +162,59 @@
   box-shadow: 0px 0px 5px 2px #000;
   cursor: pointer;
   overflow: hidden;
-
+  box-shadow: 6px 1px 7px #d6245b;
+  @media screen and (max-width: 1437px) {
+    // max-width: 194px;
+    // height: 202px;
+    // border-radius: 80%;
+    max-width: 161px;
+    height: 151px;
+    top: 4%;
+    left: 2%;
+    border-radius: 48%;
+    float: left;
+    // shape-outside: inset;
+    margin: 0 43px 175px 0;
+  }
+  @media screen and (max-width: 1024px) {
+    max-width: 135px;
+    height: 132px;
+    float: left;
+    margin: 0 43px 38px 0;
+  
+  }
+  // @media screen and (max-width: 960px) {
+    
+  // }
+  // @media screen and (max-width: 768px) {
+  //   max-width: 74px;
+  //   height: 74px;
+  //   top: 9%;
+  //   left: 38%;
+  //   border-radius: 48%;
+  //   float: left;
+  //   shape-outside: margin-box;
+  //   margin: 0 20px 5px 0;
+  // }
+  @media screen and (max-width: 780px) {
+    // max-width: 135px;
+    // height: 132px;
+    // float: left;
+    // margin: 0 45px 1px 0;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 74px;
+    height: 74px;
+    top: 4%;
+    left: 28%;
+    border-radius: 48%;
+    float: left;
+    shape-outside: margin-box;
+    margin: 0 20px 5px 0;
+    position: sticky;
+  
+  }
+ 
   &::before {
     content: "";
     position: absolute;
@@ -83,10 +250,72 @@
     left: -46%;
     top: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../../public/images/gallery/me.png);
+    background-image: url(../../public/images/gallery/me.webp);
     background-repeat: no-repeat;
     background-size: cover;
     rotate: 90deg;
     background-position: center;
+    @media screen and (max-width: 1437px) {
+      top: 162px;
+      left: -189px;
+      max-width: 777px;
+      height: 144%;
+      border-radius: 79%;
+    }
+    @media screen and (max-width: 1024px) {
+      height: 170%;
+      left: -149%;
+      top: 111%;
+      max-width: 735px;
+        // transform: translate(-59%, -10%);
+        // transform: translate(-70%, -10%);
+      }
+    // @media screen and (max-width: 960px) {
+    //   height: 144%;
+    //   left: -129%;
+    //   top: 101%;
+    //   max-width: 735px;
+    // }
+    @media screen and (max-width: 768px) {
+      height: 167%;
+      left: -103%;
+      top: 68%;
+      max-width: 140px;
+    }
   }
+    
+  
 }
+
+
+  
+
+// Responsive styles
+// @media screen and (max-width: 768px) {
+//   .container {
+//     flex-direction: row;
+//     text-align: center;
+//   }
+
+//   .photo-frame {
+//     width: 100%;
+//     height: auto;
+//     margin-bottom: 1rem;
+
+//     &::after {
+//       height: auto;
+//       width: 100%;
+//       left: 50%;
+//       top: 0;
+//       transform: translate(-50%, -50%) rotate(0deg);
+//       background-position: center;
+//     }
+//   }
+// }
+
+// @media screen and (max-width: 480px) {
+//   .moimoi {
+//     padding: 20px;
+//   }
+// }
+

@@ -1,5 +1,15 @@
 .cv {
     background-color: rgb(255, 255, 255);
     border: 35px solid rgb(255, 255, 255);
+    @media screen and (max-width: 991px) {
+        margin-bottom: -1rem;
+        margin-top: 11rem;
+        // overflow: hidden;
+    }
+    @media screen and (max-width: 500px) {
+        margin-bottom: -1rem;
+        margin-top: 8rem;
+        // overflow: hidden;
+    }
 }
 

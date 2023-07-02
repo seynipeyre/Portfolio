@@ -1,12 +1,17 @@
 .containers{
-    background-image: url(../../public/images/mes.dessins/foret_background_2.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    // border: 10px solid #3fe4ff;
+  background-image: url(../../public/images/mes.dessins/foret_background_2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  // border: 10px solid #3fe4ff;
+  @media screen and (max-width: 991px) {
+    // margin-bottom: -10rem;
+    margin-top: 11rem;
+    overflow: hidden;
   }
-  .container{
+}
+  .container-dessin{
     position: relative;
     display: flex;
     justify-content: center;
@@ -15,6 +20,7 @@
     flex-wrap: wrap;
     margin: 0 auto;
     overflow: hidden;
+
   
     &__box{
       position: relative;
@@ -26,6 +32,8 @@
       justify-content: center;
       align-items: center;
       margin: 20px 30px;
+      display: flex;
+      flex-wrap: wrap;
       transition: 1s;
   
       &:hover{

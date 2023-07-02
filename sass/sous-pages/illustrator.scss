@@ -4,6 +4,8 @@
     background-color: white;
     background-attachment: fixed;
     // border: 10px solid #3fe4ff;
+   
+   
   h1{
     // Styles pour la section
     background-color: #f0f0f0;
@@ -52,6 +54,36 @@ overflow: hidden;
     align-items: center;
     margin: 20px 30px;
     transition: 1s;
+    @media screen and (max-width: 1438px) {
+        width: 264px;
+        height: 341px;
+    }
+    @media screen and (max-width: 1024px) {
+        width: 215px;
+        height: 278px;
+        justify-content: center;
+
+    }
+    @media screen and (max-width: 768px) {
+        width: 233px;
+        height: 278px;
+    }
+    @media screen and (max-width: 500px) {
+        width: 80px;
+        height: 116px;
+    }
+    // @media screen and (max-width: 1152px) {
+    //     width: 221px;
+    //     height: 278px;
+    // }
+    // @media screen and (max-width: 1134px) {
+    //     width: 193px;
+    //     height: 278px;
+    // }
+    // @media screen and (max-width: 1044px) {
+    //     width: 163px;
+    //     height: 210px;
+    // }
 
     &:hover{
     transform: translateY(-20px);
@@ -126,6 +158,16 @@ overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 1024px) {
+            height: 14rem;
+        }
+        @media screen and (max-width: 500px) {
+            width: 7rem;
+            max-height: 96px;
+        }
+        // @media screen and (max-width: 1044px) {
+        //     height: 12rem;
+        // }
     }
     ul{
         display: flex;
@@ -158,9 +200,84 @@ overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
+        @media screen and (max-width: 1024px) {
+            padding: 5.5rem;
+        }
+        @media screen and (max-width: 500px) {
+            padding: 5.5rem;
+            position: relative;
+            top: -103px;
+            left: -100px;
+        }
+        
     }
     }
 
 }
 }
 
+
+// ========================Presentation de la page illustrator======================
+// ========================Fin presentation de la page illustrator======================
+.logo{
+    background-color: white;
+    background-attachment: fixed;
+    @media screen and (max-width: 991px) {
+        // margin-bottom: -9rem;
+        margin-top: 11rem;
+        overflow: hidden;
+    }
+   
+    
+  h1{
+    // Styles pour la section
+    background-color: #ffe4c4;
+    padding: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 156%;
+    @media screen and (max-width: 1438px) {
+        font-size: 100%;
+        text-align: center;
+    }
+    @media screen and (max-width: 1024px) {
+        font-size: 100%;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 81%;
+        text-align: center;
+    }
+    @media screen and (max-width: 500px) {
+        font-size: 75%;
+        text-align: center;
+    }
+    &::after,
+    &::before {
+        content: "";
+        display: block;
+        width: 330px;
+        height: 4px;
+        background-color: #f04177;
+        margin-top: 10px;
+        @media screen and (max-width: 768px) {
+            width: 144px;
+        }
+        @media screen and (max-width: 500px) {
+            width: 65px;
+        }
+    }
+
+    &::after {
+        // Positionnement de ::after à gauche
+        float: left;
+    }
+
+    &::before {
+        // Positionnement de ::before à droite
+        float: right;
+
+    }
+    }
+}

@@ -1,12 +1,23 @@
 .footer-content {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 10px;
     text-align: center;     
-    left: 209px;
+    left: 178px;
     width: 88%;
     position: relative;
     z-index: -1;
     border: 13px solid #e2235e;
+  @media screen and (max-width: 991px) {
+    left: 0;
+    padding: 10px;
+    width: 100%;
+    // position: fixed;
+    // z-index: -1;
+  }
+  @media screen and (max-width: 568px) {
+    display: flex;
+    flex-direction: column;
+  }
     
     
       
@@ -17,6 +28,9 @@
   
       &__logo {
         width: 8rem;
+        @media screen and (max-width: 991px) {
+          width: 3.5rem;
+        }
       }
   
       &__name {
@@ -29,6 +43,9 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        @media screen and (max-width: 568px) {
+          flex-direction: column;
+        }
   
       &__contact {
         margin-bottom: 5px;

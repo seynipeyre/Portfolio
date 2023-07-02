@@ -1,6 +1,21 @@
 .photoshop{
-  background-color: #f2a8a0;;
+  background-color: #f2a8a0;
+  @media screen and (max-width: 991px) {
+    margin-bottom: -1rem;
+    margin-top: 11rem;
+    overflow: hidden;
+  }
 } 
+.image-wrapper{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  overflow: hidden;
+}
 .image-container {
   position: relative;
   width: 391px;
@@ -8,6 +23,46 @@
   border-radius: 10px;
   overflow: hidden;
   margin: 10px; /* Ajustez l'espacement entre les images */
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 30px;
+  transition: 1s;
+  @media screen and (max-width: 1157px) {
+    width: 331px;
+    height: 307px;
+  }
+  @media screen and (max-width: 1051px) {
+    width: 255px;
+  }
+  @media screen and (max-width: 991px) {
+    width: 340px;
+  }
+  @media screen and (max-width: 878px) {
+    width: 165px;
+  }
+  @media screen and (max-width:744px) {
+    width: 134px;
+  }
+  @media screen and (max-width:654px) {
+    width: 172px;
+  }
+  @media screen and (max-width:524px) {
+    width: 128px;
+  }
+  @media screen and (max-width:448px) {
+    width: 102px;
+    height: 150px;
+  }
+  @media screen and (max-width:400px) {
+    width: 81px;
+    height: 143px;
+  }
+  @media screen and (max-width:340px) {
+    width: 64px;
+    height: 121px;
+  }
   
   figure {
     margin: 0;
