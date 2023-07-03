@@ -363,12 +363,14 @@ nav ul li a:hover {
   padding: 32px 26px;
   margin: 0px auto;
   gap: 6%;
+  display: flex;
 }
 @media screen and (max-width: 1437px) {
   .container1 .myma {
     margin: 0px auto;
     justify-content: center;
     align-items: center;
+    display: block;
   }
 }
 @media screen and (max-width: 400px) {
@@ -455,14 +457,15 @@ nav ul li a:hover {
 }
 
 .photo-frame {
-  width: 419px;
-  height: 419px;
+  width: 272px;
+  height: 277px;
   background-color: #000;
   position: relative;
   box-shadow: 0px 0px 5px 2px #000;
   cursor: pointer;
   overflow: hidden;
   box-shadow: 6px 1px 7px #d6245b;
+  border-radius: 239px;
 }
 @media screen and (max-width: 1437px) {
   .photo-frame {
@@ -515,16 +518,17 @@ nav ul li a:hover {
   content: "";
   position: absolute;
   display: flex;
-  height: 397px;
-  width: 401px;
-  left: -46%;
-  top: 50%;
+  height: 228px;
+  width: 263px;
+  left: -40%;
+  top: 56%;
   transform: translate(-50%, -50%);
   background-image: url(../../public/images/gallery/me.webp);
   background-repeat: no-repeat;
   background-size: cover;
   rotate: 90deg;
   background-position: center;
+  border-radius: 208px;
 }
 @media screen and (max-width: 1437px) {
   .photo-frame::after {
@@ -538,8 +542,8 @@ nav ul li a:hover {
 @media screen and (max-width: 1024px) {
   .photo-frame::after {
     height: 170%;
-    left: -149%;
-    top: 111%;
+    left: -108%;
+    top: 71%;
     max-width: 735px;
   }
 }
