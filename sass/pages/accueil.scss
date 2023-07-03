@@ -165,16 +165,12 @@
   box-shadow: 6px 1px 7px #d6245b;
   border-radius: 239px;
   @media screen and (max-width: 1437px) {
-    // max-width: 194px;
-    // height: 202px;
-    // border-radius: 80%;
     max-width: 161px;
     height: 151px;
     top: 4%;
     left: 2%;
     border-radius: 48%;
     float: left;
-    // shape-outside: inset;
     margin: 0 43px 175px 0;
   }
   @media screen and (max-width: 1024px) {
@@ -258,8 +254,8 @@
     background-position: center;
     border-radius: 208px;
     @media screen and (max-width: 1437px) {
-      top: 162px;
-      left: -189px;
+      // top: 104px;
+      left: -143px;
       max-width: 777px;
       height: 144%;
       border-radius: 79%;

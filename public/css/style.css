@@ -532,8 +532,7 @@ nav ul li a:hover {
 }
 @media screen and (max-width: 1437px) {
   .photo-frame::after {
-    top: 162px;
-    left: -189px;
+    left: -143px;
     max-width: 777px;
     height: 144%;
     border-radius: 79%;
