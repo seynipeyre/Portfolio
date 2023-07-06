@@ -198,6 +198,7 @@
     // height: 132px;
     // float: left;
     // margin: 0 45px 1px 0;
+    display: none;
   }
   @media screen and (max-width: 768px) {
     max-width: 74px;
@@ -209,6 +210,7 @@
     shape-outside: margin-box;
     margin: 0 20px 5px 0;
     position: sticky;
+    display: none;
   
   }
  
@@ -271,6 +273,7 @@
       left: -103%;
       top: 68%;
       max-width: 140px;
+      display: none;
     }
   }
     

@@ -486,6 +486,11 @@ nav ul li a:hover {
     margin: 0 43px 38px 0;
   }
 }
+@media screen and (max-width: 780px) {
+  .photo-frame {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   .photo-frame {
     max-width: 74px;
@@ -497,6 +502,7 @@ nav ul li a:hover {
     shape-outside: margin-box;
     margin: 0 20px 5px 0;
     position: sticky;
+    display: none;
   }
 }
 .photo-frame::before {
@@ -552,6 +558,7 @@ nav ul li a:hover {
     left: -103%;
     top: 68%;
     max-width: 140px;
+    display: none;
   }
 }
 
